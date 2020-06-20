@@ -7,7 +7,11 @@
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +19,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HereMapActivity"></activity>
+
+        <meta-data
+            android:name="com.here.sdk.access_key_id"
+            android:value="YDQJVO3TQFONE5SZDTBQEW" />
+        <meta-data
+            android:name="com.here.sdk.access_key_secret"
+            android:value="EOECQ4FNH-X9E3UWE52GRSNPXEAFRVZLQARMIORYJVH9YNYIOCWDKFWBZJX4O6RZT4SRZEYWJSDBSQLTU-IOLW" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -26,21 +47,18 @@
         -->
         <activity
             android:name=".LoginActivity"
-            />
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Onboard"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="fullSensor"></activity>
 
-        <activity android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

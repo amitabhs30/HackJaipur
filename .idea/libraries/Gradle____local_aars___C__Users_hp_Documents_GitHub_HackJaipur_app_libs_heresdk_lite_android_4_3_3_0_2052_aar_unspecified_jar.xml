@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C./Users/hp/Documents/GitHub/HackJaipur/app/libs/heresdk-lite-android-4.3.3.0.2052.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/655371c635b2ee66a3cc67538a6acf36/jetified-heresdk-lite-android-4.3.3.0.2052/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/655371c635b2ee66a3cc67538a6acf36/jetified-heresdk-lite-android-4.3.3.0.2052/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
