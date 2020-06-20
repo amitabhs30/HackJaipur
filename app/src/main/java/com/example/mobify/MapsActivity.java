@@ -156,7 +156,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Toast.makeText(this,"Wirte Some Address:)",Toast.LENGTH_LONG).show();
             }
             }
-        public void hospitals_nearby(View view){
+        public void hospital(View view){
         mMap.clear();
         String hospital = "Hospital";
             String url = getUrl(latitude,longitude,hospital);
@@ -175,7 +175,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             googleUrl.append("&radius=" + ProximityRadius);
             googleUrl.append("&type=" +hospital);
             googleUrl.append("&sensor=true");
-            googleUrl.append("&key=" +"AIzaSyAbumNNE8cuEE6Hmo6V14b6nyJyK_MfIQ0");
+            googleUrl.append("&key=" +"AIzaSyArFu1VaJ5pni9R77N2aw7gKWwz3yf6Iug");
             return googleUrl.toString();
 
         }

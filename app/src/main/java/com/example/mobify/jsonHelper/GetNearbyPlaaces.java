@@ -35,6 +35,7 @@ public class GetNearbyPlaaces extends AsyncTask<Object,String,String> {
     }
 
     private void DisplayNearbyPlaces(List<HashMap<String,String>> nearbyPlaceList){
+
         for (int i=0;i<nearbyPlaceList.size();i++){
             MarkerOptions hmarkerOptions = new MarkerOptions();
             HashMap<String,String > googleNearByPlace =nearbyPlaceList.get(i);

@@ -1,5 +1,8 @@
 package com.example.mobify.jsonHelper;
 
+import android.util.Log;
+import android.widget.Toast;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -53,13 +56,13 @@ public class DataParse {
         return NearbypLaces;
     }
     public List<HashMap<String,String>> parse(String jsonData){
-        JSONArray jsonArray = null;
+        JSONArray jsonArray =new JSONArray();
         JSONObject jsonObject;
         try {
             jsonObject= new JSONObject(jsonData);
             jsonArray = jsonObject.getJSONArray("results");
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.i("Error",e.toString());
         }
         return getAllNearbyPlaces(jsonArray);
 

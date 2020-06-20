@@ -4,4 +4,5 @@
     <string name="login">Login</string>
     <string name="com_auth0_client_id">e3SddqhF0zfRuO6j2zIsWLpqFSt9y4bu</string>
     <string name="com_auth0_domain">dev-3tf3lzyb.us.auth0.com</string>
+    <string name="search_for_a_location">Search for a Location</string>
 </resources>

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.auth0.android:auth0:1.23.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c739584b3137ee388f9ae410cd7d350/jetified-auth0-1.23.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54a0e01a4b52e66d475df7e951390692/jetified-auth0-1.23.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c739584b3137ee388f9ae410cd7d350/jetified-auth0-1.23.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c739584b3137ee388f9ae410cd7d350/jetified-auth0-1.23.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54a0e01a4b52e66d475df7e951390692/jetified-auth0-1.23.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54a0e01a4b52e66d475df7e951390692/jetified-auth0-1.23.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.auth0.android/auth0/1.23.0/6a945ea97a1d4ba4f4667d9b774426babdf5df8d/auth0-1.23.0-javadoc.jar!/" />
