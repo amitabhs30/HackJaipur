@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onSuccess(@NonNull Credentials credentials) {
                         //Yaha pr user ke credentials aa jayenge after authentication....
                         //and yaha par hi next activity ka intent dalna hai!!!
-                        Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                        Intent intent=new Intent(LoginActivity.this,MapsActivity.class);
                         startActivity(intent);
                     }
                 });

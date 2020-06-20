@@ -13,9 +13,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -35,13 +37,14 @@ import java.util.Locale;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    ImageButton hospitalSearch;
+    LinearLayout hospitalSearch, chemistSearch, doctorSearch;
     EditText locationSearch;
     double latitude,longitude;
     LocationManager locationManager;
     LocationListener locationListener;
     int ProximityRadius = 1000;
     private GoogleMap mMap;
+    CardView chooseService, chooseFilter;
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -62,8 +65,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         assert mapFragment != null;
         mapFragment.getMapAsync(this);
+
         locationSearch = findViewById(R.id.location_search);
          hospitalSearch = findViewById(R.id.hospitals_nearby);
+        chemistSearch = findViewById(R.id.chemist_search);
+        doctorSearch = findViewById(R.id.doctor_search);
+
+        chooseService = findViewById(R.id.choose_service);
+        chooseFilter = findViewById(R.id.choose_filter);
 
     }
         @Override
@@ -158,6 +167,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         public void hospitals_nearby(View view){
         mMap.clear();
+        chooseService.setVisibility(View.GONE);
+        chooseFilter.setVisibility(View.VISIBLE);
+
         String hospital = "Hospital";
             String url = getUrl(latitude,longitude,hospital);
         Object transferData[] = new Object[2];
